@@ -1,0 +1,117 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    max-width: 800px;
+    width: 100%;
+}
+
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+
+    height: 100px;
+    background: radial-gradient(circle, #ff0000, #830000);
+}
+
+.test {
+    background-color: #ff0000;
+    position: absolute;
+    color: white;
+    padding: 5px 5px;
+    width: 120px;
+    left: 150px;
+
+    box-shadow: 5px 20px 20px rgba(33, 0, 0, 0.2);
+}
+
+.test:active {
+    transition: 0.3s;
+    transform: scale(0.9);
+}
+
+.header-text {
+    height: 50px;
+}
+
+/* マスク+要素重ね */
+
+.hero {
+    /* 配置の基準となる。 */
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    user-select: none;
+}
+
+.overlay {
+    /* 親の位置を基準にする。 */
+    position: absolute;
+
+    /* この二つがマスクには必要 */
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.4); /* 半透明黒 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay h1 {
+    font-size: 100px;
+    color: white;
+}
+
+.overlay p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 280px;
+}
+
+
+/* 
+@media (max-width: 600px) {
+    .head {
+        width: 800px;
+    }
+} */
+
+.borderline {
+    /* border:3px solid white; */
+
+    margin: 100px 0;
+    width: 100%;
+    height: 100px;
+    background: radial-gradient(circle, #480c0c, #000000);
+}
+
+.end {
+    background-color: black;
+    height: 250px;
+    margin-top: 150px;
+}
+
+.end-text {
+text-align: center;
+font-size: 50px;
+/* margin: 0; */
+color: white;
+}
+
+.end-text2 {
+text-align: center;
+font-size: 50px;
+margin-top: 10px;
+/* margin: 0; */
+color: white;
+}
